@@ -20,7 +20,8 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home', [
         'name' => "Wahyu",
-        'title' => 'Home'
+        'title' => 'Home',
+        'alamat' => 'bumi bagian indonesia lebih tepatnya provinsi jawa timur kab.trenggalek kec.dongko desa pandean'
     ]);
 });
 
@@ -42,6 +43,13 @@ Route::get('/kontak', function () {
         'name' => 'Muhamad Wahyu s',
         'email' => 'wahyumuhamad503@gmail.com',
         'image' => 'foto.jpeg',
+
+    ]);
+});
+
+Route::get('/profile', function () {
+    return view('profile', [
+        'title' => 'profile'
     ]);
 });
 
@@ -86,7 +94,7 @@ Route::get('posts/{slug}', function ($slug) {
 
     $new_post = [];
     foreach ($blog_posts as $post) {
-        if ($post["slug"] == $slug) {
+        if ($post["slug"] === $slug) {
             $new_post = $post;
         }
     }
