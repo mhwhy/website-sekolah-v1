@@ -1,11 +1,42 @@
-body {
-    background: aliceblue;
+#tes {
+    background-image: url(../img/foto.jpeg);
+}
+
+#hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/foto.jpeg);
+    background-size: cover;
+    position: relative;
+}
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+#hero h2 {
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 24px;
 }
 
 footer {
     padding: 10px;
     color: white;
-    background-color: #5bb318;
+    background-color: #1c6758;
     font-weight: bold;
 }
 
@@ -14,4 +45,5 @@ footer {
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+    color: #1c6758;
 }

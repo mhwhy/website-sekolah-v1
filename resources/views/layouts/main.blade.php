@@ -8,7 +8,7 @@
     @include('partials.style')
 
   </head>
-  <body>
+  <body style="background: #EEF2E6">
 
 @include('partials.navbar')
 <div class="container mt-4">
