@@ -1,11 +1,7 @@
-#tes {
-    background-image: url(../img/foto.jpeg);
-}
-
 #hero {
     width: 100%;
-    height: 80vh;
-    background-image: url(../img/foto.jpeg);
+    height: 70vh;
+    background-image: url(../img/smkn.png);
     background-size: cover;
     position: relative;
 }
@@ -40,9 +36,16 @@ footer {
     font-weight: bold;
 }
 
-.card {
+.card-ku {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #1c6758;
+}
+.card-home {
+    box-shadow: 0 2px 3px 0 #1c6758;
+    border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
     color: #1c6758;

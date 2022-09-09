@@ -11,7 +11,7 @@
   <body style="background: #EEF2E6">
 
 @include('partials.navbar')
-<div class="container mt-4">
+<div class="container">
     @yield('container')
 </div>
 
@@ -19,6 +19,6 @@
 
 @include('partials.javascript')
 
-<script src="https://kit.fontawesome.com/fb7b96bb2d.js" crossorigin="anonymous"></script>
+
   </body>
 </html>

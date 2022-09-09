@@ -2,7 +2,7 @@
 @section('container')
 <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
   <div class="col">
-    <div class="card h-100">
+    <div class="card-ku card h-100">
       <img src="assets/img/kemah.jpg" class="card-img-top" alt="kemah">
       <div class="card-body">
         <h5 class="card-title">Kegiatan Pramuka</h5>
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card-ku card h-100">
       <img src="assets/img/upacara.jpg" class="card-img-top" alt="upacara">
       <div class="card-body">
         <h5 class="card-title">Kegiatan Upacara</h5>
@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card-ku card h-100">
       <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="kerjabakti">
       <div class="card-body">
         <h5 class="card-title">Kegiatan Kerja bakti</h5>
@@ -32,7 +32,7 @@
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
-    <div class="card">
+    <div class="card-ku card">
       <img src="assets/img/upacara.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card-ku card">
       <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -50,7 +50,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card-ku card">
       <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -59,7 +59,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card-ku card">
       <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
