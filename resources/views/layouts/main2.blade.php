@@ -11,9 +11,9 @@
   <body style="background: #EEF2E6">
     @include('partials.navbar')
 
-<div class="container">
-    @yield('container')
-</div>
+    <div class="container2">
+      @yield('container2')
+  </div>
 
 @include('partials.footer')
 

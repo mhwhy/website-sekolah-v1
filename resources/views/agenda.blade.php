@@ -1,71 +1,43 @@
-@extends('layouts.main')
-@section('container')
-<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-  <div class="col">
-    <div class="card-ku card h-100">
-      <img src="assets/img/kemah.jpg" class="card-img-top" alt="kemah">
-      <div class="card-body">
-        <h5 class="card-title">Kegiatan Pramuka</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card-ku card h-100">
-      <img src="assets/img/upacara.jpg" class="card-img-top" alt="upacara">
-      <div class="card-body">
-        <h5 class="card-title">Kegiatan Upacara</h5>
-        <p class="card-text">This is a short card.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card-ku card h-100">
-      <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="kerjabakti">
-      <div class="card-body">
-        <h5 class="card-title">Kegiatan Kerja bakti</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-</div>
+@extends('layouts.main2')
+@section('container2')
+<div class="container">
+  <h1 class="card card-head">KEGIATAN SEKOLAH</h1>
 
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card-ku card">
-      <img src="assets/img/upacara.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card-ku card">
-      <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card-ku card">
-      <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card-ku card">
-      <img src="assets/img/kerjabakti.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
 </div>
+<div class="card">
+  <div class="card-body">
+    <div class="container">
+    <h3 class="card-text  mb-4" >Workshop Penerapan Budaya Kerja Industri di SMKN 2 Trenggalek</h3>
+    <p style="font-weight: bold;"><i class="fa-solid fa-calendar-days me-2"></i>03/10/2022  <i class="ms-2 fa-solid fa-user"></i> admin</p>
+    <img class="mb-3" style="margin-left: 2rem" src="assets/img/agenda1.jpeg" alt="agenda">
+    <p>infosdmgtk-SMKN 2 Trenggalek telah melaksanakan Workshop Budaya Kerja Industri di SMKN 2 Trenggalek, Aula SMKN 2 Trenggalek, 4-9 November 2020 dalam kaitan SMKN 2 Trenggalek sebagai SMK Center of Excellent. Salah satu strategi SMK COE adalah dengan adanya pemenuhan sarana Baca Selengkapnya …</p>
+  </div>
+  <hr>
+  <div class="container">
+    <h3 class="card-text mb-4">Workshop Produk Kreatif Kewirausahaan menuju Sekolah Pencetak Wirausaha (SPW)</h3>
+    <p style="font-weight: bold;"><i class="fa-solid fa-calendar-days me-2"></i>03/10/2022  <i class="ms-2 fa-solid fa-user"></i> admin</p>
+    <img class="mb-4" style="margin-left: 9rem" src="assets/img/agenda2.jpg" alt="agenda">
+    <p>Dalam meningkatkan mutu pendidikan dan pembinaan siswa SMK yang lebih berkualitas dan mampu menghadapi tantangan masa kini dan masa depan. Dibutuhkan sebuah kecakapan dan ketrampilan yang relevan yaitu kurikulum abad 21, yang meliputi siswa mampu berkomunikasi dan berkolaborasi, berfikir kritis Baca Selengkapnya …</p>
+  </div>
+  <hr>
+  <div class="container">
+
+    <h3 class="card- mb-4">Apel Pagi dalam rangka Memperingati HUT PRAMUKA yang ke 55 di SMK Negeri 2 Trenggalek</h3>
+    <p style="font-weight: bold;"><i class="fa-solid fa-calendar-days me-2"></i>03/10/2022  <i class="ms-2 fa-solid fa-user"></i> admin</p>
+
+    <img class="mb-4" style="margin-left: 14rem" src="assets/img/agenda3.jpg" alt="agenda">
+    <p>Berikut adalah Kegiatan Apel Pagi dalam rangka Memperingati HUT PRAMUKA yang ke 55 di SMK Negeri 1 Cimahi yang dilaksanakan pada hari Sabtu 20 Agustus dengan Pembina Mabigus SMK Negeri 1 Cimahi yaitu Bpk. Drs. H. Ermizul, M.Pd dan petugas Baca Selengkapnya …</p>
+  </div>
+  <hr>
+  <div class="container">
+    <h3 class="card-text  mb-4">Upacara Hari Senin Pagi Tanggal 22 Agustus 2016 dalam rangka memperingati HUT RI yang ke-71</h3>
+   <p style="font-weight: bold;"><i class="fa-solid fa-calendar-days me-2"></i>03/10/2022  <i class="ms-2 fa-solid fa-user"></i> admin</p>
+    <img class="mb-4" style="margin-left: 14rem" src="assets/img/agenda4.jpg" alt="agenda">
+    <p>Kegiatan Upacara Hari Senin Pagi Tanggal 22 Agustus 2016 dalam rangka memperingati HUT RI yang ke-71 dengan Pembina Upacara Ibu Hj. Dwi Sulistyawati, M.Pd dengan tema Hubungan Industri SMK Negeri 1 Cimahi.   Dalam kesempatan ini juga, dilanjutkan dengan penyerahan Baca Selengkapnya …</p>
+  </div>
+
+  </div>
+  </div>
+
+
 @endsection
