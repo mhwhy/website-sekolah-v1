@@ -1,3 +1,34 @@
+/* CSS HEADER YA */
+header {
+    padding: 10px 0;
+    background-color: #3d8361;
+}
+header form {
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand img {
+    margin-right: 20px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.brand .brand-name h1 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.brand .brand-name h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
 #hero {
     width: 100%;
     height: 80vh;
@@ -29,11 +60,300 @@
     font-size: 24px;
 }
 
+/*sambutan */
+
+#sambutan {
+    margin: 60px 0;
+}
+
+#sambutan h2 {
+    color: #3d8361;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#sambutan h3 {
+    color: #3d8361;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#sambutan p {
+    font-size: 14px;
+    font-size: 500;
+    line-height: 28px;
+}
+
+/*ekstrakulikuler*/
+
+#ekstrakulikuler {
+    background-color: #ddd;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+#ekstrakulikuler .section-body-item {
+    display: flex;
+    background-color: #3d8361;
+    border-radius: 5px;
+    padding: 20px;
+    color: #ffffff;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#ekstrakulikuler .section-body-item:hover {
+    background-color: #d6cda4;
+    color: #3d8361;
+    transition: 0.5s;
+}
+
+#ekstrakulikuler .section-body-item h4 {
+    font-weight: 500;
+}
+#ekstrakulikuler .section-body .row:first-of-type {
+    margin-bottom: 30px;
+}
+
+#ekstrakulikuler .row-2 {
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+/*prestasi*/
+
+.section-item {
+    margin: 70px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    min-height: 260px;
+}
+
+.section-item-thumbnail {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 300%;
+    max-height: 100%;
+}
+
+.section-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.section-title h2 {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #1c6758;
+    font-weight: 600;
+}
+
+.section-title h2:after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #f2c808;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section-item-title {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.section-item-title h3 {
+    font-size: 18px;
+    color: #3d8361;
+    line-height: 25px;
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+.section-item-title span {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+.section-item-title span i {
+    margin-right: 5px;
+}
+
+.section-item-title span:first-of-type {
+    margin-right: 15px;
+}
+
+.section-item-body p {
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+}
+
+.tombol-selengkapnya {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-more {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3d8361;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #3d8361;
+    border-radius: 0;
+    padding: 10px 50px;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-more:hover {
+    background-color: #15477a;
+    color: #fff;
+}
+
 footer {
     padding: 10px;
     color: white;
     background-color: #1c6758;
     font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+footer .footer-col:first-of-type {
+    padding-right: 10px;
+}
+
+footer .brand {
+    display: flex;
+}
+
+footer .brand img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+footer .brand h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+footer .tentang {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+footer .sosmed {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .sosmed li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer .sosmed li a {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 50px;
+}
+footer .sosmed li a:hover {
+    color: #dadada;
+}
+.footer-col h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.footer-col .alamat {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer-col .kontak {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer-col .kontak li {
+    margin: 10px 0;
+}
+
+.footer-col .kontak i {
+    margin-right: 10px;
+}
+
+.footer-col .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col .footer-nav li {
+    margin: 10px 0;
+}
+
+.footer-col .footer-nav a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 28px;
+    transition: all 0.5s;
+}
+.footer-col .footer-nav a:hover {
+    border-bottom: 1px dashed #fff;
+}
+
+.footer-copyright .container {
+    border-top: 1px solid rgba(242, 242, 242, 0.25);
+    padding: 10px 0;
+}
+.footer-copyright {
+    margin-top: 60px;
+}
+
+.footer-copyright h6 {
+    font-size: 16px;
+    color: #cecece;
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-copyright h6 a {
+    color: inherit;
+}
+
+.footer-copyright h6 a:hover {
+    border-bottom: 1px dashed #cecece;
 }
 
 .card-head {

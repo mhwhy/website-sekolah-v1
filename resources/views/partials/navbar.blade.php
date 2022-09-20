@@ -9,19 +9,32 @@
   </div>
 
 
-<div class=" navbar navbar-expand-lg" style="background: #3D8361">
-    <div class=" container">
-        <img src="assets/img/logo_smk_2.png" width="40">
-      <a class=" navbar-brand d-block text-white ms-2"  style=" font-weight:bold;" href="#">SMKN 2 TRENGGALEK</a>
-      <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
-        </div>
-        <form class=" d-flex" role="search">
-          <input class=" form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-          <button style="background: #1C6758" class=" btn rounded-pill text-white" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </div>
+  <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="brand">
+						<img src="{{ asset ('assets/img/logo_smk_2.png')}}" alt="">
+						<div class="brand-name">
+							<h1>SMKN 2 TRENGGALEK</h1>
+							<h3>Sekolah Pencetak Generasi Teknologi Hebat</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 searchbox-wrapper">
+					<div class="searchbox">
+            <form class=" d-flex" role="search">
+              <input class=" form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+              <button style="background: #1C6758" class=" btn rounded-pill text-white" type="submit">Search</button>
+            </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
 
 
 

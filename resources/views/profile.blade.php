@@ -17,10 +17,10 @@
                 <div class="card-group">
                   <div class="card shadow ">
                     <div class="card-body">
-                      <p class="card-text d-inline">Guru : 100</p>
-                      <p class="card-text d-inline">Siswa Laki- laki : 100</p>
-                      <p class="card-text d-inline">Siswi Perempuan : 100</p>
-                      <p class="card-text d-inline">Rombongan belajar : 100</p>
+                      <p class="card-text d-inline">Guru : 189</p><br>
+                      <p class="card-text d-inline">Siswa Laki- laki : 459</p> <br>
+                      <p class="card-text d-inline">Siswi Perempuan : 360</p>
+                      <p class="card-text d-inline">Rombongan belajar : 119</p>
                     </div>
                   </div>
                   <div class="card shadow ">
