@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\postsController;
+use App\Http\Controllers\StudentController;
 use App\Models\berita;
 use Illuminate\Support\Facades\Route;
 
@@ -53,3 +54,11 @@ Route::get('/berita', [postsController::class, 'index']);
 
 
 Route::get('posts/{slug}', [postsController::class, 'find']);
+
+Route::get('/siswa', [StudentController::class, 'index']);
+
+Route::get('/siswa/tambah', [StudentController::class, 'tambah']);
+Route::post('/siswa/simpan', [StudentController::class, 'simpan']);
+Route::get('/siswa/edit/{id}', [StudentController::class, 'edit']);
+Route::put('/siswa/update/{id}', [StudentController::class, 'update']);
+Route::get('/siswa/hapus/{id}', [StudentController::class, 'delete']);

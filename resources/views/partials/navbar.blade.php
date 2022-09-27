@@ -51,6 +51,14 @@
         <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="Agenda")?'active':'' }} href="/agenda">Agenda</a>
         <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="Kontak")?'active':'' }} href="/kontak">kontak</a>
         <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="profile")?'active':'' }} href="/profile">profile</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-5 border-start border-end" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/siswa">Data Siswa</a></li>
+            <li><a class="dropdown-item" href="#">Data Guru</a></li>
+            <li><a class="dropdown-item" href="#">Data Loker</a></li>
+          </ul>
+        </li>
         </div>
         </div>
       </div>
