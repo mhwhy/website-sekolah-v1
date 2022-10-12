@@ -2,24 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
+use App\Models\Teacher;
 
 use Illuminate\Http\Request;
 
-class StudentController extends Controller
+class TeacherController extends Controller
 {
     public function index()
     {
-        //mengambil data siswa
-        $student = Student::all();
+        //mengambil data guru
+        $teacher = Teacher::all();
 
-        //mengirim data student ke view siswa
-        return view('datasiswa.siswa', ['siswa' => $student]);
+        //mengirim data teacher ke view guru
+        return view('dataguru.guru', ['guru' => $teacher]);
     }
 
     public function tambah()
     {
-        return view('datasiswa.siswa_tambah');
+        return view('dataguru.guru_tambah');
     }
 
     public function simpan(Request $request)
@@ -27,28 +27,28 @@ class StudentController extends Controller
         $this->validate($request, [
             'id' => 'required',
             'nama' => 'required',
-            'kelas' => 'required',
             'jenis_kelamin' => 'required',
+            'mapel' => 'required',
             'alamat' => 'required',
             'foto' => 'required',
         ]);
 
-        Student::create([
+        Teacher::create([
             'id' => $request->id,
             'nama' => $request->nama,
-            'kelas' => $request->kelas,
             'jenis_kelamin' => $request->jenis_kelamin,
+            'mapel' => $request->mapel,
             'alamat' => $request->alamat,
             'foto' => $request->foto,
         ]);
 
-        return redirect('/datasiswa/siswa');
+        return redirect('/dataguru/guru');
     }
 
     public function edit($id)
     {
-        $student = Student::find($id);
-        return view('datasiswa.siswa_edit', ['siswa' => $student]);
+        $teacher = Teacher::find($id);
+        return view('dataguru.guru_edit', ['guru' => $teacher]);
     }
 
     public function update($id, Request $request)
@@ -56,28 +56,28 @@ class StudentController extends Controller
         $this->validate($request, [
             'id' => 'required',
             'nama' => 'required',
-            'kelas' => 'required',
             'jenis_kelamin' => 'required',
+            'mapel' => 'required',
             'alamat' => 'required',
             'foto' => 'required',
         ]);
 
-        $student = Student::find($id);
-        $student->id = $request->id;
-        $student->nama = $request->nama;
-        $student->kelas = $request->kelas;
-        $student->jenis_kelamin = $request->jenis_kelamin;
-        $student->foto = $request->foto;
-        $student->save();
+        $teacher = Teacher::find($id);
+        $teacher->id = $request->id;
+        $teacher->nama = $request->nama;
+        $teacher->jenis_kelamin = $request->jenis_kelamin;
+        $teacher->mapel = $request->mapel;
+        $teacher->foto = $request->foto;
+        $teacher->save();
 
-        return redirect('/datasiswa/siswa');
+        return redirect('/dataguru/guru');
     }
 
     public function delete($id)
     {
-        $student = Student::find($id);
-        $student->delete();
+        $teacher = Teacher::find($id);
+        $teacher->delete();
 
-        return redirect('/datasiswa/siswa');
+        return redirect('/dataguru/guru');
     }
 }

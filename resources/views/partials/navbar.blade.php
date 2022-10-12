@@ -54,8 +54,8 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white mx-5 border-start border-end" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/siswa">Data Siswa</a></li>
-            <li><a class="dropdown-item" href="#">Data Guru</a></li>
+            <li><a class="dropdown-item" href="/datasiswa/siswa">Data Siswa</a></li>
+            <li><a class="dropdown-item" href="/dataguru/guru">Data Guru</a></li>
             <li><a class="dropdown-item" href="#">Data Loker</a></li>
           </ul>
         </li>

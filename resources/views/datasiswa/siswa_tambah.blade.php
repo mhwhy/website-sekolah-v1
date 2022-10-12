@@ -5,7 +5,7 @@
  <br/>
  <br/>
 
-<form method="post" action="/siswa/simpan">
+<form method="post" action="/datasiswa/siswa/simpan">
 {{ csrf_field() }}
 
     <div class="form-group">
@@ -71,7 +71,7 @@
 <br/>
 
     <div class="form-group mb-5">
-        <a href="/siswa" class="btn btn-primary">Kembali</a>
+        <a href="/datasiswa/siswa" class="btn btn-primary">Kembali</a>
         <input type="submit" class="btn btn-success" value="Simpan">
     </div>
 </form>

@@ -6,7 +6,7 @@
 
 <h1>DATA SISWA RPL</h1>
  <div class="card-body">
- <a href="/siswa/tambah" class="btn btn-success">Input Siswa Baru</a>
+ <a href="/datasiswa/siswa/tambah" class="btn btn-success">Input Siswa Baru</a>
  <br/> <br/>
 
  <table class="table table-bordered table-hover table-striped">
@@ -29,9 +29,9 @@
     <td>{{ $s->Jenis_kelamin }}</td>
     <td>{{ $s->Alamat }}</td> <td><img src="{{url('img/'.$s->Foto)}}" width="100px"></td>
     <td>
-<a href="/siswa/edit/{{ $s->id }}"class="btn btn-warning">Edit</a>
+<a href="/datasiswa/siswa/edit/{{ $s->id }}"class="btn btn-warning">Edit</a>
 
-<a href="/siswa/hapus/{{ $s->id }}" class="btn btn-danger">Hapus</a>
+<a href="/datasiswa/siswa/hapus/{{ $s->id }}" class="btn btn-danger">Hapus</a>
 </td>
 </tr>
 @endforeach

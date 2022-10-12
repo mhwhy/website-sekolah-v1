@@ -5,7 +5,7 @@
  <br/>
  <br/>
 
-<form method="post" action="/siswa/update/{{ $siswa->id }}">
+<form method="post" action="/datasiswa/siswa/update/{{ $siswa->id }}">
 {{ csrf_field() }}
 {{ method_field('PUT') }}
 
@@ -72,7 +72,7 @@
 <br/>
 
     <div class="form-group mb-5">
-        <a href="/siswa" class="btn btn-primary">Kembali</a>
+        <a href="/datasiswa/siswa" class="btn btn-primary">Kembali</a>
         <input type="submit" class="btn btn-success" value="Simpan">
     </div>
 </form>
