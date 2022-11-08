@@ -45,14 +45,14 @@
       </button>
       <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class=" navbar-nav" style="margin-left: 120px">
-        <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="Home")?'active':'' }} aria-current="page" href="/home">
+        <a class=" nav-link text-white mx-5 " {{ ($title==="Home")?'active':'' }} aria-current="page" href="/home">
           Home</a>
-        <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="Berita")?'active':'' }} href="/berita">Berita</a>
-        <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="Agenda")?'active':'' }} href="/agenda">Agenda</a>
-        <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="Kontak")?'active':'' }} href="/kontak">kontak</a>
-        <a class=" nav-link text-white mx-5 border-start border-end" {{ ($title==="profile")?'active':'' }} href="/profile">profile</a>
+        <a class=" nav-link text-white mx-5 " {{ ($title==="Berita")?'active':'' }} href="/berita">Berita</a>
+        <a class=" nav-link text-white mx-5 " {{ ($title==="Agenda")?'active':'' }} href="/agenda">Agenda</a>
+        <a class=" nav-link text-white mx-5 " {{ ($title==="Kontak")?'active':'' }} href="/kontak">kontak</a>
+        <a class=" nav-link text-white mx-5 " {{ ($title==="profile")?'active':'' }} href="/profile">profile</a>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white mx-5 border-start border-end" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
+          <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/datasiswa/siswa">Data Siswa</a></li>
             <li><a class="dropdown-item" href="/dataguru/guru">Data Guru</a></li>

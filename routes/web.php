@@ -64,7 +64,12 @@ Route::get('/datasiswa/siswa/edit/{id}', [StudentController::class, 'edit']);
 Route::put('/datasiswa/siswa/update/{id}', [StudentController::class, 'update']);
 Route::get('/datasiswa/siswa/hapus/{id}', [StudentController::class, 'delete']);
 
+
+
 Route::get('/dataguru/guru', [TeacherController::class, 'index']);
+
+
+
 
 Route::get('/dataguru/guru/tambah', [TeacherController::class, 'tambah']);
 Route::post('/dataguru/guru/simpan', [TeacherController::class, 'simpan']);

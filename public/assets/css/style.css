@@ -386,3 +386,26 @@ footer .sosmed li a:hover {
     color: white;
     border-radius: 5px;
 }
+
+/* guru */
+.card-guru {
+    margin-top: 80px;
+    margin-bottom: 200px;
+    box-shadow: -2px 7px 36px -6px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: -2px 7px 36px -6px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -2px 7px 36px -6px rgba(0, 0, 0, 0.54);
+    color: #15477a;
+}
+
+/* sisswa edit */
+.form-group {
+    top: -60px;
+    width: 50%;
+    position: relative;
+    left: 300px;
+    padding: 5px;
+}
+
+.input-bg input {
+    background: #eef2e6;
+}
