@@ -29,7 +29,7 @@
     <td>{{ $s->Jenis_kelamin }}</td>
     <td>{{ $s->Alamat }}</td> <td><img src="{{url('img/'.$s->Foto)}}" width="100px"></td>
     <td>
-<a href="/datasiswa/siswa/edit/{{ $s->id }}"class="btn btn-warning">Edit</a>
+<a href="/datasiswa/siswa/edit/{{ $s->id }}"class="btn btn-warning m-2`">Edit</a>
 
 <a href="/datasiswa/siswa/hapus/{{ $s->id }}" class="btn btn-danger">Hapus</a>
 </td>

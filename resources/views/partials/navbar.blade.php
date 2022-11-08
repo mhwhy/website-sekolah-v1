@@ -56,7 +56,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/datasiswa/siswa">Data Siswa</a></li>
             <li><a class="dropdown-item" href="/dataguru/guru">Data Guru</a></li>
-            <li><a class="dropdown-item" href="#">Data Loker</a></li>
+            <li><a class="dropdown-item" href="/dataloker/loker">Data Loker</a></li>
           </ul>
         </li>
         </div>

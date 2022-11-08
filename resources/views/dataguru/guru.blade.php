@@ -5,41 +5,8 @@
 <div class="container">
 
 
-<h1>DATA GURU RPL</h1>
- <div class="card-body">
- <a href="/dataguru/guru/tambah" class="btn btn-success">Input Guru Baru</a>
- <br/> <br/>
 
- <table class="table table-bordered table-hover table-striped">
-<thead align="center">
-<tr>
-    <th >ID</th>
-    <th >NAMA</th>
-    <th >MAPEL</th>
-    <th >JENIS KELAMIN</th> <th>ALAMAT</th>
-    <th >FOTO</th>
-    <th >AKSI</th>
-</tr>
-</thead>
-<tbody>
-@foreach ($guru as $s)
-<tr>
-    <td>{{ $s->id }}</td>
-    <td>{{ $s->Nama }}</td>
-    <td>{{ $s->Mapel }}</td>
-    <td>{{ $s->Jenis_kelamin }}</td>
-    <td>{{ $s->Alamat }}</td> <td><img src="{{url('img/'.$s->Foto)}}" width="100px"></td>
-    <td>
-<a href="/dataguru/guru/edit/{{ $s->id }}"class="btn btn-warning">Edit</a>
-
-<a href="/dataguru/guru/hapus/{{ $s->id }}" class="btn btn-danger">Hapus</a>
-</td>
-</tr>
-@endforeach
-</tbody>
-</table>
-
-{{-- <div class="row g-4">
+<div class="row g-4">
 @foreach ($guru as $s)
 <div class="col-lg-4 col-md-6">
     <div class="card card-guru" style="width: 20rem; ">
@@ -57,45 +24,11 @@
     </div>
 </div>
   @endforeach
-</div> --}}
+</div>
 
 
 
 
 </div>
 @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

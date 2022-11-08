@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LokerController;
 use App\Http\Controllers\postsController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/home', function () {
@@ -76,3 +77,12 @@ Route::post('/dataguru/guru/simpan', [TeacherController::class, 'simpan']);
 Route::get('/dataguru/guru/edit/{id}', [TeacherController::class, 'edit']);
 Route::put('/dataguru/guru/update/{id}', [TeacherController::class, 'update']);
 Route::get('/dataguru/guru/hapus/{id}', [TeacherController::class, 'delete']);
+
+Route::get('/dataloker/loker', [LokerController::class, 'index']);
+
+Route::get('/dataloker/loker/tambah', [LokerController::class, 'tambah']);
+Route::post('/dataloker/loker/simpan', [LokerController::class, 'simpan']);
+Route::get('/dataloker/loker/edit/{id}', [LokerController::class, 'edit']);
+Route::put('/dataloker/loker/update/{id}', [LokerController::class, 'update']);
+Route::get('/dataloker/loker/hapus/{id}', [LokerController::class, 'delete']);
+Route::get('/dataloker/loker/detail/{id}', [LokerController::class, 'detail']);
