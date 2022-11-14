@@ -27,7 +27,6 @@ class TeacherController extends Controller
         $this->validate($request, [
             'id' => 'required',
             'nama' => 'required',
-            'jenis_kelamin' => 'required',
             'mapel' => 'required',
             'alamat' => 'required',
             'foto' => 'required',
@@ -36,7 +35,6 @@ class TeacherController extends Controller
         Teacher::create([
             'id' => $request->id,
             'nama' => $request->nama,
-            'jenis_kelamin' => $request->jenis_kelamin,
             'mapel' => $request->mapel,
             'alamat' => $request->alamat,
             'foto' => $request->foto,
@@ -56,7 +54,6 @@ class TeacherController extends Controller
         $this->validate($request, [
             'id' => 'required',
             'nama' => 'required',
-            'jenis_kelamin' => 'required',
             'mapel' => 'required',
             'alamat' => 'required',
             'foto' => 'required',
@@ -65,7 +62,6 @@ class TeacherController extends Controller
         $teacher = Teacher::find($id);
         $teacher->id = $request->id;
         $teacher->nama = $request->nama;
-        $teacher->jenis_kelamin = $request->jenis_kelamin;
         $teacher->mapel = $request->mapel;
         $teacher->foto = $request->foto;
         $teacher->save();

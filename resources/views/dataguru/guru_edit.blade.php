@@ -31,15 +31,7 @@
 
 
 
-    <div class="form-group">
-        <label> Jenis Kelamin </label>
-        <input type='text' name='jenis_kelamin' class='form-control' value="{{ $guru->Jenis_kelamin }}" placeholder='Masukkan Jenis Kelamin ...'>
-        @if($errors -> has('jenis_kelamin'))
-    <div class='text-danger'>
-        {{$errors -> first ('jenis_kelamin')}}
-    </div>
-        @endif
-    </div>
+
 
     <div class="form-group">
         <label> Alamat </label>
@@ -64,7 +56,7 @@
 
     <div class="form-group">
         <label> Foto </label>
-        <input type='text' name='foto' class='form-control' value="{{ $guru->Foto }}" placeholder='Ketikkan misal male.jpg'>
+        <input type='file' name='foto' class='form-control' value="{{ $guru->Foto }}" placeholder='Ketikkan misal male.jpg'>
         @if($errors -> has('foto'))
     <div class='text-danger'>
         {{$errors -> first ('foto')}}
