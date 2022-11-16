@@ -4,6 +4,8 @@ use App\Http\Controllers\LokerController;
 use App\Http\Controllers\postsController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Models\berita;
 use Illuminate\Support\Facades\Route;
 
@@ -86,3 +88,14 @@ Route::get('/dataloker/loker/edit/{id}', [LokerController::class, 'edit']);
 Route::put('/dataloker/loker/update/{id}', [LokerController::class, 'update']);
 Route::get('/dataloker/loker/hapus/{id}', [LokerController::class, 'delete']);
 Route::get('/dataloker/loker/detail/{id}', [LokerController::class, 'detail']);
+
+
+
+
+
+
+Route::get('/login', [LoginController::class, 'login']);
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/register', [RegisterController::class, 'register']);
+
+Route::post('/register', [RegisterController::class, 'store']);

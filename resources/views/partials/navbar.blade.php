@@ -45,12 +45,12 @@
       </button>
       <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class=" navbar-nav" style="margin-left: 120px">
-        <a class=" nav-link text-white mx-5 " {{ ($title==="Home")?'active':'' }} aria-current="page" href="/home">
+        {{-- <a class=" nav-link text-white mx-5 " {{ ($title==="Home")?'active':'' }} aria-current="page" href="/home">
           Home</a>
         <a class=" nav-link text-white mx-5 " {{ ($title==="Berita")?'active':'' }} href="/berita">Berita</a>
         <a class=" nav-link text-white mx-5 " {{ ($title==="Agenda")?'active':'' }} href="/agenda">Agenda</a>
         <a class=" nav-link text-white mx-5 " {{ ($title==="Kontak")?'active':'' }} href="/kontak">kontak</a>
-        <a class=" nav-link text-white mx-5 " {{ ($title==="profile")?'active':'' }} href="/profile">profile</a>
+        <a class=" nav-link text-white mx-5 " {{ ($title==="profile")?'active':'' }} href="/profile">profile</a> --}}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
           <ul class="dropdown-menu">
