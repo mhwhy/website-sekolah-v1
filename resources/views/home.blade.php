@@ -1,6 +1,6 @@
 @extends('layouts.main2')
 @section('container2')
-{{-- <section id="hero" class="d-flex justify-content-center align-items-center">
+<section id="hero" class="d-flex justify-content-center align-items-center">
   <div class="position-relative" data-aos="zoom-in" data-aos-delay="100">
     <h1>SMKN 2 TRENGGALEK</h1>
     <h2>Merupakan salah satu lembaga pendidikan <br> menengah kejuruan di kota trenggalek</h2>
@@ -109,7 +109,7 @@
 				</div>
 			</div>
 		</div>
-	</section> --}}
+	</section>
 
 
 

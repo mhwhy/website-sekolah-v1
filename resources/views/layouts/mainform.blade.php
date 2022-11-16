@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEBKU | {{ $title }}</title>
 
-    @include('partials.style')
+    @include('partials.styleform')
 
   </head>
   <body style="background: #557153">

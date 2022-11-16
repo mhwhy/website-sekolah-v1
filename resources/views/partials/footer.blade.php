@@ -5,7 +5,7 @@
 					<div class="footer-col">
 						<div class="brand">
 							<img src="{{asset('assets/img/logo_smk_2.png')}}" alt="logo">
-							
+
 							<h1>SMKN <br> 2 TRENGGALEK</h1>
 						</div>
 							<p class="tentang">SMKN 2 TRENGGALEK mencetak siswa unggulan teknologi informasi serta menjadi tumpuan keberjasilan dan kesuksesa nus adan bangsa</p>
