@@ -35,7 +35,7 @@
 
         </div>
 
-        <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Login</button>
+        <button class="w-100 btn-login mt-3" type="submit">Login</button>
 
         <small>Not Registered!<a href="/register">Register Now!</a></small>
       </form>

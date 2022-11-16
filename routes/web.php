@@ -94,8 +94,9 @@ Route::get('/dataloker/loker/detail/{id}', [LokerController::class, 'detail']);
 
 
 
-Route::get('/login', [LoginController::class, 'login']);
+Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'register']);
 
 Route::post('/register', [RegisterController::class, 'store']);

@@ -52,12 +52,25 @@
         <a class=" nav-link text-white mx-5 " {{ ($title==="Kontak")?'active':'' }} href="/kontak">kontak</a>
         <a class=" nav-link text-white mx-5 " {{ ($title==="profile")?'active':'' }} href="/profile">profile</a> --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
+            <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">mymenu</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">MyDashboard</a></li>
+                <li><a class="dropdown-divider" href=""></a></li>
+                <li>
+                    <form action="/logout" method="post">
+                        @csrf
+                        <button type="submit" class="dropdown-item">Logout</button>
+                    </form>
+                </li>
+            </ul>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/datasiswa/siswa">Data Siswa</a></li>
             <li><a class="dropdown-item" href="/dataguru/guru">Data Guru</a></li>
             <li><a class="dropdown-item" href="/dataloker/loker">Data Loker</a></li>
           </ul>
+        </li>
         </li>
         </div>
         </div>
