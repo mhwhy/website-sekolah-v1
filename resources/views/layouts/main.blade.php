@@ -3,19 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WEBKU | {{ $title }}</title>
+    <title>WEBKU | </title>
 
-    @include('partials.style')
+    @include('partials.styleform')
 
   </head>
-  <body style="background: #ffffff">
-    @include('partials.navbar')
+  <body style="background: #557153">
 
-<div class="container">
+<div class="isi">
     @yield('container')
 </div>
 
-@include('partials.footer')
 
 @include('partials.javascript')
 

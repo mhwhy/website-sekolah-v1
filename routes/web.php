@@ -100,3 +100,11 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'register']);
 
 Route::post('/register', [RegisterController::class, 'store']);
+
+
+// admin
+Route::get('/NiceAdmin', function () {
+    return view('NiceAdmin.index', [
+        'title' => 'profile'
+    ]);
+});

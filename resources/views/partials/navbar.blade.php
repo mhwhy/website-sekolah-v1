@@ -45,12 +45,12 @@
       </button>
       <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class=" navbar-nav">
-        <a class=" nav-link text-white mx-5 " {{ ($title==="home")?'active':'' }} aria-current="page" href="/home">
+        <a class=" nav-link text-white mx-5 " aria-current="page" href="/home">
           Home</a>
-        <a class=" nav-link text-white mx-5 " {{ ($title==="berita")?'active':'' }} href="/berita">Berita</a>
-        <a class=" nav-link text-white mx-5 " {{ ($title==="agenda")?'active':'' }} href="/agenda">Agenda</a>
-        <a class=" nav-link text-white mx-5 " {{ ($title==="kontak")?'active':'' }} href="/kontak">kontak</a>
-        <a class=" nav-link text-white mx-5 " {{ ($title==="profile")?'active':'' }} href="/profile">profile</a>
+        <a class=" nav-link text-white mx-5 "  href="/berita">Berita</a>
+        <a class=" nav-link text-white mx-5 "  href="/agenda">Agenda</a>
+        <a class=" nav-link text-white mx-5 "  href="/kontak">kontak</a>
+        <a class=" nav-link text-white mx-5 "  href="/profile">profile</a>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
             <ul class="dropdown-menu">
@@ -59,11 +59,10 @@
                 <li><a class="dropdown-item" href="/dataloker/loker">Data Loker</a></li>
               </ul>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{ Auth::user()->name }}</a>
-
+            <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">saya ,{{ auth()->user()->name }}</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">MyDashboard</a></li>
-            <li><a class="dropdown-divider" href=""></a></li>
+            <li><a class="dropdown-item" href="/NiceAdmin">MyDashboard</a></li>
+
             <li>
                 <form action="/logout" method="post">
                     @csrf
