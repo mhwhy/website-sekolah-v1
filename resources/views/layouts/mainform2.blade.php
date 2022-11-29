@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEBKU | </title>
 
-    @include('partials.styleform')
+    @include('partials.styleform2')
 
   </head>
   <body style="background: #557153">

@@ -1,4 +1,4 @@
-@extends('layouts.mainform',['title' => 'tambah siswa'])
+@extends('Dashboard.layouts.main',['title' => 'tambah siswa'])
  @section('container')
 
  <h1 class="mt-5 text-white "><center>EDIT DATA SISWA RPL</center></h1>

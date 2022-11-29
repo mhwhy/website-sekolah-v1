@@ -1,10 +1,10 @@
-@extends('layouts.main2',['title' => 'guru'])
+@extends('Dashboard.layouts.main',['title' => 'guru'])
 
-@section('container2')
+@section('container')
 
 <div class="container">
-    <h1 class="mt-5">DATA GURU RPL</h1>
-
+    <a href="/dataguru/guru/tambah" class="btn btn-success mt-5">Input Loker Baru</a>
+    <br><br>
 
 
 
@@ -19,7 +19,9 @@
             <p>{{ $s->Mapel }}</p>
             <p>{{ $s->Alamat }}</p>
             <p>
+                <a href="/dataguru/guru/edit/{{ $s->id }}"class="btn btn-warning">Edit</a>
 
+                <a href="/dataguru/guru/hapus/{{ $s->id }}" class="btn btn-danger">Hapus</a>
             </p>
         </div>
     </div>

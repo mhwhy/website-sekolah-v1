@@ -45,12 +45,12 @@
       </button>
       <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class=" navbar-nav">
-        <a class=" nav-link text-white mx-5 " aria-current="page" href="/home">
+        <a class=" nav-link text-white mx-4 " aria-current="page" href="/home">
           Home</a>
-        <a class=" nav-link text-white mx-5 "  href="/berita">Berita</a>
-        <a class=" nav-link text-white mx-5 "  href="/agenda">Agenda</a>
-        <a class=" nav-link text-white mx-5 "  href="/kontak">kontak</a>
-        <a class=" nav-link text-white mx-5 "  href="/profile">profile</a>
+        <a class=" nav-link text-white mx-4 "  href="/berita">Berita</a>
+        <a class=" nav-link text-white mx-4 "  href="/agenda">Agenda</a>
+        <a class=" nav-link text-white mx-4 "  href="/kontak">kontak</a>
+        <a class=" nav-link text-white mx-4 "  href="/profile">profile</a>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informasi</a>
             <ul class="dropdown-menu">
@@ -58,6 +58,16 @@
                 <li><a class="dropdown-item" href="/dataguru/guru">Data Guru</a></li>
                 <li><a class="dropdown-item" href="/dataloker/loker">Data Loker</a></li>
               </ul>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Paket Keahlian</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/komli">Rekayasa Perangkat Lunak</a></li>
+            <li><a class="dropdown-item" href="#">Desain Pemodelan dan Informasi Bangunan</a></li>
+            <li><a class="dropdown-item" href="#">Tata Boga</a></li>
+
+
+        </ul>
+        </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">saya ,{{ auth()->user()->name }}</a>
           <ul class="dropdown-menu">

@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardLokerController;
 use App\Http\Controllers\DashboardStudentController;
+use App\Http\Controllers\DashboardTeacherController;
 use App\Http\Controllers\LokerController;
 use App\Http\Controllers\postsController;
 use App\Http\Controllers\StudentController;
@@ -90,6 +92,11 @@ Route::get('/dataloker/loker/hapus/{id}', [LokerController::class, 'delete']);
 Route::get('/dataloker/loker/detail/{id}', [LokerController::class, 'detail']);
 
 
+Route::get('/komli', function () {
+    return view('komli.rpl');
+});
+
+
 
 
 
@@ -102,6 +109,8 @@ Route::get('/register', [RegisterController::class, 'register']);
 Route::post('/register', [RegisterController::class, 'store']);
 
 
+
+
 // admin
 Route::get('/Dashboard', function () {
     return view('Dashboard.index', [
@@ -110,3 +119,5 @@ Route::get('/Dashboard', function () {
 })->middleware('auth');
 
 Route::resource('/Dashboard/siswa', DashboardStudentController::class)->middleware('auth');
+Route::resource('/Dashboard/guru', DashboardTeacherController::class)->middleware('auth');
+Route::resource('/Dashboard/loker', DashboardLokerController::class)->middleware('auth');

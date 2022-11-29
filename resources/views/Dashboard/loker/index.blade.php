@@ -1,8 +1,11 @@
-@extends('layouts.main', ['title' => 'Loker',])
+@extends('Dashboard.layouts.main',['title' => 'loker'])
+
 @section('container')
-    <h1>Halaman Loker</h1>
 
-
+<h1>Halaman Loker</h1>
+    <a href="/dataloker/loker/tambah" class="btn btn-success m-4 " style="width: 15%
+    ">Input Loker Baru</a>
+    <br><br>
 
     <div class="row">
     @foreach ($loker as $l)
@@ -20,7 +23,8 @@
                         <p class="card-text">Rp. {{ $l->gaji }}</p>
                         <p class="card-text"><small class="text-muted">{{ $l->updated_at }}</small></p>
                         <a href="/dataloker/loker/detail/{{ $l->id }}" class="btn btn-success">detail</a>
-
+                        <a href="/dataloker/loker/edit/{{ $l->id }}" class="btn btn-warning">edit</a>
+                        <a href="/dataloker/loker/hapus/{{ $l->id }}" class="btn btn-danger">Hapus</a>
                         <br><br>
                     </div>
                 </div>
@@ -30,3 +34,4 @@
     @endforeach
 </div>
 @endsection
+
