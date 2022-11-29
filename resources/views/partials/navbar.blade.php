@@ -61,7 +61,7 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white mx-5 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">saya ,{{ auth()->user()->name }}</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/NiceAdmin">MyDashboard</a></li>
+            <li><a class="dropdown-item" href="/Dashboard">MyDashboard</a></li>
 
             <li>
                 <form action="/logout" method="post">

@@ -1,12 +1,12 @@
 <?php
 
+use App\Http\Controllers\DashboardStudentController;
 use App\Http\Controllers\LokerController;
 use App\Http\Controllers\postsController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Models\berita;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -103,8 +103,10 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 
 // admin
-Route::get('/NiceAdmin', function () {
-    return view('NiceAdmin.index', [
-        'title' => 'profile'
+Route::get('/Dashboard', function () {
+    return view('Dashboard.index', [
+        'title' => 'dashboard admin'
     ]);
-});
+})->middleware('auth');
+
+Route::resource('/Dashboard/siswa', DashboardStudentController::class)->middleware('auth');
