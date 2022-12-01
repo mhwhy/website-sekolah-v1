@@ -1,32 +1,35 @@
 <!-- ======= Sidebar ======= -->
-<aside id="sidebar" class="sidebar">
+<aside id="sidebar" class="sidebar ">
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
         <a class="nav-link {{ Request::is('Dashboard') ? 'active' : '' }}" href="/Dashboard">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <i style="color: #0E5E6F" class="bi bi-grid"></i>
+          <span style="color: #8EC3B0">Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
         <a class="nav-link "  href="/Dashboard/guru">
-          <i class="bi bi-menu-button-wide"></i><span>Data Guru</span>
+          <i style="color: #0E5E6F" class="bi bi-menu-button-wide" ></i>
+          <span style="color: #8EC3B0">Data Guru</span>
         </a>
 
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
         <a class="nav-link  {{ Request::is('Dashboard/siswa') ? 'active' : '' }}"  href="/Dashboard/siswa">
-          <i class="bi bi-journal-text"></i><span>Data Siswa</span>
+          <i style="color: #0E5E6F" class="bi bi-journal-text"></i>
+          <span style="color: #8EC3B0">Data Siswa</span>
         </a>
 
       </li><!-- End Forms Nav -->
 
       <li class="nav-item">
         <a class="nav-link " href="/Dashboard/loker">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Data Loker</span>
+          <i style="color: #0E5E6F" class="bi bi-layout-text-window-reverse">
+        </i><span style="color: #8EC3B0">Data Loker</span>
         </a>
 
       </li><!-- End Tables Nav -->

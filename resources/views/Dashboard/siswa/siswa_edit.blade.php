@@ -5,11 +5,11 @@
  <br/>
  <br/>
 
-<form method="post" action="/datasiswa/siswa/update/{{ $siswa->id }}" style="background: #7D8F69">
-{{ csrf_field() }}
-{{ method_field('PUT') }}
+ <form method="post" action="/Dashboard/siswa/update/{{ $siswa->id }}">
+    {{ csrf_field() }}
+    {{ method_field('PUT') }}
 
-    <div class="form-group" style="padding-top: 100px">
+    <div class="form-group" >
         <label class="text-white"> NIS </label>
         <input type='text' name='id' class='form-control' value="{{ $siswa->id }}" placeholder='Masukkan NIS ...'>
         @if($errors -> has('id'))
@@ -72,7 +72,7 @@
 <br/>
 
     <div class="form-group mb-5">
-        <a href="/datasiswa/siswa" class="btn btn-primary">Kembali</a>
+        <a href="/Dashboard/siswa" class="btn btn-primary">Kembali</a>
         <input type="submit" class="btn btn-success" value="Simpan">
     </div>
 </form>

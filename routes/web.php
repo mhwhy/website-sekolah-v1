@@ -61,45 +61,15 @@ Route::get('/berita', [postsController::class, 'index']);
 
 Route::get('posts/{slug}', [postsController::class, 'find']);
 
-Route::get('/datasiswa/siswa', [StudentController::class, 'index']);
-
-Route::get('/datasiswa/siswa/tambah', [StudentController::class, 'tambah']);
-Route::post('/datasiswa/siswa/simpan', [StudentController::class, 'simpan']);
-Route::get('/datasiswa/siswa/edit/{id}', [StudentController::class, 'edit']);
-Route::put('/datasiswa/siswa/update/{id}', [StudentController::class, 'update']);
-Route::get('/datasiswa/siswa/hapus/{id}', [StudentController::class, 'delete']);
-
-
-
-Route::get('/dataguru/guru', [TeacherController::class, 'index']);
-
-
-
-
-Route::get('/dataguru/guru/tambah', [TeacherController::class, 'tambah']);
-Route::post('/dataguru/guru/simpan', [TeacherController::class, 'simpan']);
-Route::get('/dataguru/guru/edit/{id}', [TeacherController::class, 'edit']);
-Route::put('/dataguru/guru/update/{id}', [TeacherController::class, 'update']);
-Route::get('/dataguru/guru/hapus/{id}', [TeacherController::class, 'delete']);
-
-Route::get('/dataloker/loker', [LokerController::class, 'index']);
-
-Route::get('/dataloker/loker/tambah', [LokerController::class, 'tambah']);
-Route::post('/dataloker/loker/simpan', [LokerController::class, 'simpan']);
-Route::get('/dataloker/loker/edit/{id}', [LokerController::class, 'edit']);
-Route::put('/dataloker/loker/update/{id}', [LokerController::class, 'update']);
-Route::get('/dataloker/loker/hapus/{id}', [LokerController::class, 'delete']);
-Route::get('/dataloker/loker/detail/{id}', [LokerController::class, 'detail']);
-
+Route::get('/dataguru/guru', [TeacherController::class, 'index2']);
+Route::get('/dataloker/loker', [LokerController::class, 'index2']);
+Route::get('/datasiswa/siswa', [StudentController::class, 'index2']);
 
 Route::get('/komli', function () {
     return view('komli.rpl');
 });
 
-
-
-
-
+// auth
 
 Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -118,6 +88,33 @@ Route::get('/Dashboard', function () {
     ]);
 })->middleware('auth');
 
-Route::resource('/Dashboard/siswa', DashboardStudentController::class)->middleware('auth');
-Route::resource('/Dashboard/guru', DashboardTeacherController::class)->middleware('auth');
-Route::resource('/Dashboard/loker', DashboardLokerController::class)->middleware('auth');
+// loker
+Route::get('/Dashboard/loker', [LokerController::class, 'index']);
+
+Route::get('/Dashboard/loker/tambah', [LokerController::class, 'tambah']);
+Route::post('/Dashboard/loker/simpan', [LokerController::class, 'simpan']);
+Route::get('/Dashboard/loker/edit/{id}', [LokerController::class, 'edit']);
+Route::put('/Dashboard/loker/update/{id}', [LokerController::class, 'update']);
+Route::get('/Dashboard/loker/hapus/{id}', [LokerController::class, 'delete']);
+Route::get('/Dashboard/loker/detail/{id}', [LokerController::class, 'detail']);
+
+// guru
+Route::get('/Dashboard/guru', [TeacherController::class, 'index']);
+Route::get('/Dashboard/guru/tambah', [TeacherController::class, 'tambah']);
+Route::post('/Dashboard/guru/simpan', [TeacherController::class, 'simpan']);
+Route::get('/Dashboard/guru/edit/{id}', [TeacherController::class, 'edit']);
+Route::put('/Dashboard/guru/update/{id}', [TeacherController::class, 'update']);
+Route::get('/Dashboard/guru/hapus/{id}', [TeacherController::class, 'delete']);
+
+// siswa
+Route::get('/Dashboard/siswa', [StudentController::class, 'index']);
+
+Route::get('/Dashboard/siswa/tambah', [StudentController::class, 'tambah']);
+Route::post('/Dashboard/siswa/simpan', [StudentController::class, 'simpan']);
+Route::get('/Dashboard/siswa/edit/{id}', [StudentController::class, 'edit']);
+Route::put('/Dashboard/siswa/update/{id}', [StudentController::class, 'update']);
+Route::get('/Dashboard/siswa/hapus/{id}', [StudentController::class, 'delete']);
+
+// Route::resource('/Dashboard/siswa', DashboardStudentController::class)->middleware('auth');
+// Route::resource('/Dashboard/guru', DashboardTeacherController::class)->middleware('auth');
+// Route::resource('/Dashboard/loker', DashboardLokerController::class)->middleware('auth');

@@ -14,12 +14,20 @@ class StudentController extends Controller
         $student = Student::all();
 
         //mengirim data student ke view siswa
+        return view('Dashboard.siswa.index', ['siswa' => $student]);
+    }
+    public function index2()
+    {
+        //mengambil data siswa
+        $student = Student::all();
+
+        //mengirim data student ke view siswa
         return view('datasiswa.siswa', ['siswa' => $student]);
     }
 
     public function tambah()
     {
-        return view('datasiswa.siswa_tambah');
+        return view('Dashboard.siswa.siswa_tambah');
     }
 
     public function simpan(Request $request)
@@ -42,13 +50,13 @@ class StudentController extends Controller
             'foto' => $request->foto,
         ]);
 
-        return redirect('/datasiswa/siswa');
+        return redirect('/Dashboard/siswa');
     }
 
     public function edit($id)
     {
         $student = Student::find($id);
-        return view('datasiswa.siswa_edit', ['siswa' => $student]);
+        return view('Dashboard.siswa.siswa_edit', ['siswa' => $student]);
     }
 
     public function update($id, Request $request)
@@ -70,7 +78,7 @@ class StudentController extends Controller
         $student->foto = $request->foto;
         $student->save();
 
-        return redirect('/datasiswa/siswa');
+        return redirect('/Dashboard/siswa');
     }
 
     public function delete($id)
@@ -78,6 +86,6 @@ class StudentController extends Controller
         $student = Student::find($id);
         $student->delete();
 
-        return redirect('/datasiswa/siswa');
+        return redirect('/Dashboard/siswa');
     }
 }

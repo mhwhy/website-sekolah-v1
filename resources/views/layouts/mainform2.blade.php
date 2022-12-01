@@ -8,7 +8,7 @@
     @include('partials.styleform2')
 
   </head>
-  <body style="background: #557153">
+  <body style="background: #F6F6C9">
 
 <div class="container">
     @yield('container')

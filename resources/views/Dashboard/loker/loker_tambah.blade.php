@@ -1,4 +1,4 @@
-@extends('layouts.main', ['title' => 'loker tambah'])
+@extends('Dashboard.layouts.main', ['title' => 'loker tambah'])
 
 @section('container')
 
@@ -6,7 +6,7 @@
 <br/>
 <br/>
 
-<form method="post" action="/dataloker/loker/simpan">
+<form method="post" action="/Dashboard/loker/simpan">
       {{ csrf_field() }}
 
     <div class="form-group">
@@ -71,7 +71,7 @@
 
     <br/>
     <div class="form-group">
-        <a href="/dataloker/loker" class="btn btn-primary">Kembali</a>
+        <a href="/Dashboard/loker" class="btn btn-primary">Kembali</a>
         <input type="submit" class="btn btn-success" value="Simpan">
     </div>
 </form>

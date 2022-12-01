@@ -14,12 +14,20 @@ class TeacherController extends Controller
         $teacher = Teacher::all();
 
         //mengirim data teacher ke view guru
+        return view('Dashboard.guru.index', ['guru' => $teacher]);
+    }
+    public function index2()
+    {
+        //mengambil data guru
+        $teacher = Teacher::all();
+
+        //mengirim data teacher ke view guru
         return view('dataguru.guru', ['guru' => $teacher]);
     }
 
     public function tambah()
     {
-        return view('dataguru.guru_tambah');
+        return view('Dashboard.guru.guru_tambah');
     }
 
     public function simpan(Request $request)
@@ -40,13 +48,13 @@ class TeacherController extends Controller
             'foto' => $request->foto,
         ]);
 
-        return redirect('/dataguru/guru');
+        return redirect('/Dashboard/guru');
     }
 
     public function edit($id)
     {
         $teacher = Teacher::find($id);
-        return view('dataguru.guru_edit', ['guru' => $teacher]);
+        return view('Dashboard.guru.guru_edit', ['guru' => $teacher]);
     }
 
     public function update($id, Request $request)
@@ -63,10 +71,11 @@ class TeacherController extends Controller
         $teacher->id = $request->id;
         $teacher->nama = $request->nama;
         $teacher->mapel = $request->mapel;
+        $teacher->alamat = $request->alamat;
         $teacher->foto = $request->foto;
         $teacher->save();
 
-        return redirect('/dataguru/guru');
+        return redirect('/Dashboard/guru');
     }
 
     public function delete($id)
@@ -74,6 +83,6 @@ class TeacherController extends Controller
         $teacher = Teacher::find($id);
         $teacher->delete();
 
-        return redirect('/dataguru/guru');
+        return redirect('/Dashboard/guru');
     }
 }

@@ -1,14 +1,17 @@
 @extends('layouts.mainform2',['title' => 'tambah siswa'])
-<h1 class="mt-5 " style="color: #E6E5A3"><center>TAMBAH DATA SISWA RPL</center></h1>
+<h1 class="mt-5 " style="color: #61764B"><center>TAMBAH DATA SISWA RPL</center></h1>
  @section('container')
 
 
-<form method="post" action="/Dashboard/siswa"  style="background: #7D8F69">
-{{ csrf_field() }}
 
 
 
-    <div class="form-group" style=" padding-top:10px">
+ <form method="post" style="background: #4E6C50;" action="/Dashboard/siswa/simpan">
+    {{ csrf_field() }}
+
+
+
+    <div class="form-group" >
         <label style="color: #E6E5A3"> NIS </label>
         <input type='text' name='id' class='form-control' placeholder='Masukkan NIS ...'>
         @if($errors -> has('id'))
@@ -71,14 +74,14 @@
 <br/>
 
     <div class="form-group mb-5">
-        <a href="/Dashboard/siswa" class="btn1 btn btn-primary">Kembali</a>
-        <input type="submit" class="btn2 btn" value="Simpan">
+        <a href="/Dashboard/siswa" class="btn1 btn btn-primary"><i class="fa-solid fa-circle-left p-2"></i></a>
+       <input type="submit" class="btn2 btn" value="Simpan">
     </div>
 </form>
 <style>
     .btn2{
-        background:#2a4c29;
-        color:white;
+        background:#71f46c;
+        color:rgb(0, 0, 0);
     }
 
     .btn2:hover{

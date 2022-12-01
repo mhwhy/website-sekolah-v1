@@ -12,7 +12,7 @@
           <p class="mb-2">{{ $loker->gaji }}</p>
                             <p class="mb-2">{{ $loker->Alamat }}</p>
                         <h6>Deskripsi:<p></h6>{{ $loker->deskripsi }}</p>
-                        <a href="/dataloker/loker" class="btn btn-primary">Kembali</a>
+                        <a href="/Dashboard/loker" class="btn btn-primary">Kembali</a>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
  <br/>
  <br/>
 
-<form method="post" action="/dataguru/guru/update/{{ $guru->id }}">
+<form method="post" action="/Dashboard/guru/update/{{ $guru->id }}">
 {{ csrf_field() }}
 {{ method_field('PUT') }}
 
@@ -28,9 +28,6 @@
     </div>
         @endif
     </div>
-
-
-
 
 
     <div class="form-group">
@@ -66,7 +63,7 @@
 <br/>
 
     <div class="form-group mb-5">
-        <a href="/dataguru/guru" class="btn btn-primary">Kembali</a>
+        <a href="/Dashboard/guru" class="btn btn-primary">Kembali</a>
         <input type="submit" class="btn btn-success" value="Simpan">
     </div>
 </form>

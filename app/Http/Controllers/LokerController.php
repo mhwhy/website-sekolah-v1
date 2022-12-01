@@ -15,16 +15,24 @@ class LokerController extends Controller
         $loker = Loker::all();
 
         //mengirim data student ke view loker
+        return view('Dashboard.loker.index', ['loker' => $loker]);
+    }
+    public function index2()
+    {
+        //mengambil data loker
+        $loker = Loker::all();
+
+        //mengirim data student ke view loker
         return view('dataloker.loker', ['loker' => $loker]);
     }
     public function tambah()
     {
-        return view('dataloker.loker_tambah');
+        return view('Dashboard.loker.loker_tambah');
     }
     public function detail($id)
     {
         $loker = Loker::find($id);
-        return view('dataloker.loker_detail', ['loker' => $loker]);
+        return view('Dashboard.loker.loker_detail', ['loker' => $loker]);
     }
 
 
@@ -49,12 +57,12 @@ class LokerController extends Controller
             'gambar' => $request->gambar
         ]);
 
-        return redirect("/dataloker/loker");
+        return redirect("/Dashboard/loker");
     }
     public function edit($id)
     {
         $loker = Loker::find($id);
-        return view('dataloker.loker_edit', ['loker' => $loker]);
+        return view('Dashboard.loker.loker_edit', ['loker' => $loker]);
     }
 
     public function update($id, Request $request)
@@ -77,13 +85,13 @@ class LokerController extends Controller
         $loker->gambar = $request->gambar;
         $loker->save();
 
-        return redirect('/dataloker/loker');
+        return redirect('/Dashboard/loker');
     }
     public function delete($id)
     {
         $loker = Loker::find($id);
         $loker->delete();
 
-        return redirect('/dataloker/loker');
+        return redirect('/Dashboard/loker');
     }
 }

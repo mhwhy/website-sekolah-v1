@@ -6,7 +6,7 @@
     <br />
     <br />
 
-    <form method="post" action="/dataloker/loker/update/{{ $loker->id }}">
+    <form method="post" action="/Dashboard/loker/update/{{ $loker->id }}">
         {{ csrf_field() }}
         {{ method_field('PUT') }}
 
@@ -73,7 +73,7 @@
 
         <br />
         <div class="form-group mb-2">
-            <a href="/dataloker/loker" class="btn btn-primary">Kembali</a>
+            <a href="/Dashboard/loker" class="btn btn-primary">Kembali</a>
             <input type="submit" class="btn btn-success" value="Simpan">
         </div>
     </form>

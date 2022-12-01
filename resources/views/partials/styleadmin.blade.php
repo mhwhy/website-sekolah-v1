@@ -33,3 +33,4 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('assets2/js/main.js') }}"></script>
+  <script src="https://kit.fontawesome.com/fb7b96bb2d.js" crossorigin="anonymous"></script>
